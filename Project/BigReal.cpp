@@ -48,6 +48,7 @@ void BigReal::setNumber(const std::string& realNumber) {
         }
     }
     decimalNumber = BigDecimalInt(wholeNumber);
+    deleteZerosFromFractionPart();
 }
 
 BigReal::BigReal(double realNumber) {
